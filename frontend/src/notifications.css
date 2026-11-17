@@ -1,0 +1,28 @@
+/* TaskFlow 2.8 — Centre de notificacions */
+.tf-notification-root { position: relative; flex-shrink: 0; }
+.tf-bell-button { position: relative; min-width: 46px; min-height: 43px; padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 10px; background: #fff; color: #0f172a; font-size: 21px; cursor: pointer; }
+.tf-bell-button:hover { background: #eff6ff; }
+.tf-bell-button:focus-visible, .tf-notification-panel button:focus-visible { outline: 3px solid #60a5fa; outline-offset: 2px; }
+.tf-bell-count { position: absolute; top: -7px; right: -7px; display: inline-flex; justify-content: center; align-items: center; min-width: 21px; height: 21px; border-radius: 12px; padding: 0 4px; font: 700 11px system-ui,sans-serif; background: #dc2626; color: white; }
+.tf-notification-panel { position: absolute; z-index: 2000; top: calc(100% + 10px); right: 0; width: min(420px, calc(100vw - 36px)); max-height: min(70vh, 640px); display: flex; flex-direction: column; overflow: hidden; background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; box-shadow: 0 18px 48px rgba(15,23,42,.2); color: #1e293b; }
+.tf-notification-header { display: flex; align-items: start; justify-content: space-between; gap: 15px; padding: 17px 18px 12px; }
+.tf-notification-header h2 { font-size: 17px; margin: 0 0 5px; }
+.tf-notification-header p { font-size: 12px; margin: 0; color: #64748b; }
+.tf-notification-close { border: 0; border-radius: 6px; background: #f1f5f9; padding: 6px 10px; cursor: pointer; }
+.tf-notification-tools { display: flex; justify-content: space-between; gap: 10px; border-bottom: 1px solid #e2e8f0; padding: 10px 18px; }
+.tf-notification-tools button { background: transparent; color: #2563eb; border: 0; padding: 5px; font-size: 12px; font-weight: 600; cursor: pointer; }
+.tf-notification-tools button:disabled, .tf-notification-mark:disabled { opacity: .45; cursor: not-allowed; }
+.tf-notification-list { overflow-y: auto; min-height: 0; overscroll-behavior: contain; }
+.tf-notification-item { display: flex; align-items: start; gap: 10px; padding: 15px 17px; border-bottom: 1px solid #f1f5f9; }
+.tf-notification-item:last-child { border-bottom: 0; }
+.tf-notification-unread { background: #eff6ff; }
+.tf-notification-read { background: white; }
+.tf-notification-icon { font-size: 19px; line-height: 1.4; }
+.tf-notification-content { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.tf-notification-content strong { display: block; font-size: 13px; }
+.tf-notification-content p { margin: 5px 0; color: #475569; font-size: 12px; line-height: 1.5; }
+.tf-notification-content small { color: #94a3b8; font-size: 11px; }
+.tf-notification-mark { background: #dbeafe; color: #1d4ed8; border: 0; border-radius: 7px; padding: 6px 9px; font-weight: 700; cursor: pointer; }
+.tf-notification-empty { padding: 28px 16px; margin: 0; text-align: center; color: #64748b; font-size: 13px; }
+.tf-notification-error { margin: 8px 14px; padding: 10px 12px; color: #991b1b; background: #fee2e2; border-radius: 8px; font-size: 12px; }
+@media (max-width: 700px) { .tf-notification-panel { right: -8px; } }

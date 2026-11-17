@@ -1,0 +1,31 @@
+/* TaskFlow 2.6: NOMÉS complements. Mantén style.css i calendar.css existents. */
+.tf-auth-page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;background:#f1f5f9}
+.tf-auth-card{width:min(100%,430px);background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:34px;box-shadow:0 12px 34px rgba(15,23,42,.09);display:flex;flex-direction:column;gap:16px}
+.tf-auth-card h1{margin:0;font-size:30px}.tf-auth-card p{margin:0 0 4px;color:#64748b}
+.tf-auth-card label,.tf-share-form label{display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:700;color:#334155}
+.tf-auth-card input,.tf-share-form input{width:100%;border:1px solid #cbd5e1;border-radius:8px;padding:12px;font:inherit;outline:none}
+.tf-auth-card input:focus,.tf-share-form input:focus{border-color:#2563eb}
+.tf-primary{border:0;border-radius:8px;background:#2563eb;color:white;font-weight:700;padding:13px}
+.tf-primary:hover{background:#1d4ed8}.tf-text-button{border:0;background:transparent;color:#2563eb;padding:7px;font-weight:600}
+.tf-profile{background:#1e293b;border-radius:10px;padding:12px;margin:-22px 0 28px;display:flex;flex-direction:column;gap:6px;overflow-wrap:anywhere}
+.tf-profile strong{font-size:14px}.tf-profile small{color:#94a3b8;font-size:11px}
+.tf-profile button{border:1px solid #475569;border-radius:7px;background:transparent;color:#e2e8f0;padding:8px;margin-top:6px;text-align:left}
+.tf-profile button:hover{background:#334155}.tf-header-actions{display:flex;flex-wrap:wrap;gap:10px}
+.tf-share-button{padding:11px 15px;border-radius:8px;border:1px solid #bfdbfe;background:#eff6ff;color:#1d4ed8;font-weight:700}
+.tf-share-button:hover{background:#dbeafe}.tf-notice{background:#f0fdf4;border:1px solid #bbf7d0;color:#166534;padding:12px 14px;margin-bottom:16px;border-radius:8px;font-size:13px}
+.tf-help{font-size:13px;line-height:1.5;color:#64748b;margin:0 0 18px}
+.tf-share-form{display:flex;flex-direction:column;gap:10px;padding-bottom:20px;margin-bottom:12px;border-bottom:1px solid #e2e8f0}
+.tf-share-form .save-button{align-self:flex-start}.tf-member-list{display:flex;flex-direction:column;gap:9px;max-height:290px;overflow-y:auto}
+.tf-member{display:flex;gap:10px;align-items:center;padding:12px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;flex-wrap:wrap}
+.tf-member>div{display:flex;flex-direction:column;gap:4px;flex:1;min-width:135px;overflow-wrap:anywhere}
+.tf-member strong{font-size:13px}.tf-member small{color:#64748b;font-size:11px}
+.tf-role{font-size:11px;font-weight:700;background:#dbeafe;color:#1d4ed8;border-radius:20px;padding:5px 9px}
+.tf-member button{font-size:11px;padding:8px 10px;border:1px solid #fecaca;border-radius:7px;background:#fff1f2;color:#be123c}
+.tf-assignee{font-size:12px;color:#1d4ed8;font-weight:600;margin-bottom:12px}
+@media(max-width:700px){.tf-header-actions{width:100%}.tf-auth-card{padding:22px}.tf-profile{margin:0 0 20px}}
+
+/* TaskFlow 2.7 — rols */
+.tf-member-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.tf-member-actions label { font-size: 12px; color: #64748b; }
+.tf-member-actions select, .tf-share-form select { border: 1px solid #cbd5e1; border-radius: 8px; padding: 9px 10px; background: #fff; color: #1e293b; max-width: 100%; }
+.tf-readonly-note { padding: 14px 18px; border-radius: 10px; background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; font-size: 13px; }

@@ -1,0 +1,31 @@
+/* TaskFlow 2.9 - estadístiques avançades */
+.tf-stats-view{margin:20px 0 35px;color:inherit}
+.tf-stats-heading{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:18px;flex-wrap:wrap}
+.tf-stats-heading h2{margin:0 0 6px;font-size:1.35rem}
+.tf-stats-heading p{margin:0;color:#64748b;font-size:.92rem}
+.tf-stats-heading button{padding:10px 14px;border:1px solid #cbd5e1;background:white;border-radius:9px;cursor:pointer;color:#334155;font-weight:600}
+.tf-stats-heading button:disabled{cursor:wait;opacity:.6}
+.tf-stats-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:18px}
+.tf-stats-kpi,.tf-stats-panel{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:19px;box-shadow:0 3px 14px rgba(15,23,42,.04)}
+.tf-stats-kpi{display:flex;flex-direction:column;gap:10px}
+.tf-stats-kpi span{font-size:.86rem;color:#64748b}
+.tf-stats-kpi strong{font-size:2rem;color:#0f172a}
+.tf-stats-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.tf-stats-panel h3{font-size:1.02rem;margin:0 0 20px;color:#0f172a}
+.tf-stats-panel-wide{grid-column:1/-1}
+.tf-stats-bars{display:flex;flex-direction:column;gap:14px}
+.tf-stats-bar-row{min-width:0}
+.tf-stats-bar-label{display:flex;justify-content:space-between;gap:12px;font-size:.86rem;margin-bottom:5px;color:#334155}
+.tf-stats-bar-label strong{color:#0f172a;font-variant-numeric:tabular-nums}
+.tf-stats-bar-track{height:12px;background:#f1f5f9;border-radius:20px;overflow:hidden}
+.tf-stats-bar-fill{height:100%;border-radius:20px;transition:width .2s ease}
+.tf-stats-muted,.tf-stats-footer{font-size:.8rem;color:#64748b;line-height:1.5;margin:14px 0 0}
+.tf-stats-footer{margin-top:18px}
+.tf-stats-table-wrap{overflow-x:auto}
+.tf-stats-table{border-collapse:collapse;width:100%;font-size:.82rem;white-space:nowrap}
+.tf-stats-table th,.tf-stats-table td{text-align:left;padding:9px 8px;border-bottom:1px solid #e2e8f0}
+.tf-stats-table th{color:#475569;font-weight:700}
+.tf-stats-table td{color:#334155}
+.tf-stats-message{padding:20px;background:#f8fafc;border-radius:10px;color:#475569}
+@media(max-width:950px){.tf-stats-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.tf-stats-grid{grid-template-columns:1fr}}
+@media(max-width:550px){.tf-stats-kpis{grid-template-columns:1fr 1fr}.tf-stats-kpi{padding:12px}.tf-stats-kpi strong{font-size:1.5rem}.tf-stats-panel{padding:14px}}

@@ -1,0 +1,68 @@
+
+# ==========================================
+# TASKFLOW 3.0 - GITIGNORE
+# ==========================================
+
+# Variables d'entorn i secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node.js / React
+node_modules/
+dist/
+build/
+coverage/
+.vite/
+*.tsbuildinfo
+
+# Base de dades i copies de seguretat
+*.dump
+*.sql.gz
+*.sqlite
+*.sqlite3
+*.db
+*backup*
+*Backup*
+*.bak
+
+# Fitxers adjunts dels usuaris
+uploads/
+backend/uploads/
+
+# Fitxers comprimits
+*.zip
+*.7z
+*.rar
+
+# Logs
+*.log
+logs/
+
+# Editors
+.vscode/
+.idea/
+
+# Sistema operatiu
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Fitxers temporals
+*.tmp
+*.temp
+*.swp

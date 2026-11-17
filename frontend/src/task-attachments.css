@@ -1,0 +1,19 @@
+/* TaskFlow 2.9 — Fitxers adjunts */
+.tf-attachments-modal { width: min(700px, 95vw); max-height: 88vh; overflow-y: auto; }
+.tf-attachments-subtitle { color: #64748b; margin: 6px 0 0; overflow-wrap: anywhere; }
+.tf-attachments-list { display: grid; gap: 10px; margin: 18px 0; }
+.tf-attachments-empty { padding: 16px; border: 1px dashed #cbd5e1; border-radius: 10px; color: #64748b; }
+.tf-attachment-item { display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 12px; border: 1px solid #e2e8f0; border-radius: 10px; background: #fff; }
+.tf-attachment-details { display: grid; gap: 5px; min-width: 0; }
+.tf-attachment-details strong { overflow-wrap: anywhere; font-size: .93rem; }
+.tf-attachment-details small { color: #64748b; }
+.tf-attachment-actions { display: flex; flex-wrap: wrap; gap: 7px; flex-shrink: 0; }
+.tf-attachment-actions button { cursor: pointer; border: 1px solid #cbd5e1; border-radius: 8px; padding: 8px 10px; background: #f8fafc; color: #0f172a; }
+.tf-attachment-actions .tf-attachment-delete { color: #b91c1c; border-color: #fecaca; background: #fef2f2; }
+.tf-attachment-actions button:disabled { opacity: .55; cursor: wait; }
+.tf-attachments-upload { display: grid; gap: 10px; border-top: 1px solid #e2e8f0; padding-top: 17px; }
+.tf-attachments-upload label { font-weight: 600; }
+.tf-attachments-upload input { max-width: 100%; }
+.tf-attachments-upload .save-button { justify-self: start; }
+.tf-attachments-readonly { padding: 12px; background: #f1f5f9; border-radius: 8px; color: #475569; }
+@media (max-width: 550px) { .tf-attachment-item { align-items: stretch; flex-direction: column; } .tf-attachment-actions { flex-shrink: 1; } }

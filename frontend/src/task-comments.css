@@ -1,0 +1,19 @@
+.tf-comments-modal { width: min(650px, 94vw); max-height: 88vh; display: flex; flex-direction: column; overflow: hidden; }
+.tf-comments-modal .modal-header { flex-shrink: 0; }
+.tf-comments-task-title { margin: 4px 0 0; color: #64748b; overflow-wrap: anywhere; }
+.tf-comments-list { flex: 1; min-height: 90px; overflow-y: auto; padding: 12px 2px; }
+.tf-comments-empty { color: #64748b; text-align: center; padding: 22px 6px; }
+.tf-comment { border: 1px solid #e2e8f0; border-radius: 12px; margin-bottom: 12px; padding: 13px; background: #f8fafc; }
+.tf-comment-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.tf-comment-head strong { color: #0f172a; }
+.tf-comment-head time { color: #64748b; font-size: .82rem; }
+.tf-comment-body { white-space: pre-wrap; overflow-wrap: anywhere; margin: 10px 0; }
+.tf-comment-actions { display: flex; justify-content: flex-end; gap: 8px; flex-wrap: wrap; }
+.tf-comment-actions button { cursor: pointer; border: 1px solid #cbd5e1; border-radius: 7px; background: white; padding: 6px 10px; color: #334155; }
+.tf-comment-actions button:disabled { cursor: not-allowed; opacity: .55; }
+.tf-comment-edit textarea, .tf-comment-form textarea { display: block; width: 100%; box-sizing: border-box; resize: vertical; padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px; margin: 8px 0; font: inherit; }
+.tf-comment-form { border-top: 1px solid #e2e8f0; padding-top: 16px; flex-shrink: 0; }
+.tf-comment-form label { font-weight: 600; }
+.tf-comment-form-footer { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.tf-comment-form-footer small { color: #64748b; }
+.tf-comments-readonly { background: #f1f5f9; padding: 12px; border-radius: 8px; }
