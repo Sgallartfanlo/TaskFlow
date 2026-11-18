@@ -29,3 +29,230 @@
 .tf-member-actions label { font-size: 12px; color: #64748b; }
 .tf-member-actions select, .tf-share-form select { border: 1px solid #cbd5e1; border-radius: 8px; padding: 9px 10px; background: #fff; color: #1e293b; max-width: 100%; }
 .tf-readonly-note { padding: 14px 18px; border-radius: 10px; background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; font-size: 13px; }
+/* =========================
+   TARGETA DE TASCA
+========================= */
+
+.task-card {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+/* Evita que qualsevol element intern surti fora */
+.task-card * {
+  box-sizing: border-box;
+}
+
+/* Separador intern */
+.task-card hr,
+.task-divider {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #e6ebf2;
+  margin: 14px 0;
+}
+
+/* =========================
+   ZONA DE BOTONS
+========================= */
+
+.task-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  width: 100%;
+  margin-top: 14px;
+}
+
+.task-actions button,
+.task-action-btn,
+.task-btn {
+  width: 100%;
+  min-width: 0;
+  height: 56px;
+  border-radius: 14px;
+  border: 1px solid #cfe0ff;
+  background: #f8fbff;
+  color: #2457d6;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 12px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.task-actions button:hover,
+.task-action-btn:hover,
+.task-btn:hover {
+  background: #eef5ff;
+  border-color: #b7cffc;
+}
+
+/* =========================
+   BOTÓ ELIMINAR / PAPERERA
+========================= */
+
+/* IMPORTANT:
+   si el botó d'eliminar estava en absolute o fora del flux,
+   això ho neutralitza */
+.task-delete-btn,
+.delete-task-btn,
+.task-trash-btn {
+  position: static !important;
+  right: auto !important;
+  left: auto !important;
+  top: auto !important;
+  bottom: auto !important;
+
+  width: 100%;
+  height: 56px;
+  border-radius: 14px;
+  border: 1px solid #f1d6d6;
+  background: #fff7f7;
+  color: #c94b4b;
+}
+
+.task-delete-btn:hover,
+.delete-task-btn:hover,
+.task-trash-btn:hover {
+  background: #fff1f1;
+  border-color: #e7baba;
+}
+
+/* =========================
+   TÍTOL, TEXTOS I BADGES
+========================= */
+
+.task-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #13233f;
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+.task-description {
+  color: #667892;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.task-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.priority-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .task-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .task-actions button,
+  .task-action-btn,
+  .task-btn,
+  .task-delete-btn,
+  .delete-task-btn,
+  .task-trash-btn {
+    height: 52px;
+    font-size: 15px;
+  }
+}
+
+/* TASKFLOW 3.0 - ACCIONS DE LES TASQUES */
+
+.task-card .task-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+}
+
+.task-card .task-actions .delete-task {
+  grid-column: 1 / -1;
+  width: 100%;
+  min-width: 0;
+  position: static !important;
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #be123c;
+}
+
+.task-card .task-actions .delete-task:hover {
+  background: #ffe4e6;
+  border-color: #fda4af;
+}
+
+/* =====================================
+   TASKFLOW 3.0 - BOTONS COMPACTES
+===================================== */
+
+.task-card .task-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.task-card .task-actions button {
+  position: static !important;
+  width: 100%;
+  min-width: 0;
+  height: 38px;
+  padding: 6px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 9px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+/* Botó eliminar */
+.task-card .task-actions .delete-task {
+  grid-column: 1 / -1;
+  height: 36px;
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #be123c;
+}
+
+.task-card .task-actions .delete-task:hover {
+  background: #ffe4e6;
+}
+
+/* Pantalles petites */
+@media (max-width: 480px) {
+  .task-card .task-actions {
+    gap: 6px;
+  }
+
+  .task-card .task-actions button {
+    font-size: 11px;
+    padding: 5px;
+  }
+}

@@ -544,7 +544,7 @@ export default function App() {
                         <button type="button" className="edit-task"
                           onClick={() => openEditTask(task)} disabled={bulkLoading}>✏️ Editar</button>
                         <button type="button" className="delete-task" onClick={() => deleteTask(task.id)}
-                          disabled={bulkLoading} title="Eliminar tasca">🗑️</button>
+                          disabled={bulkLoading} title="Eliminar tasca">🗑️ Eliminar</button>
                       </>}
                     </div>
                   </article>;
